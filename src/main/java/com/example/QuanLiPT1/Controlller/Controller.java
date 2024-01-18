@@ -2,9 +2,8 @@ package com.example.QuanLiPT1.Controlller;
 
 import com.example.QuanLiPT1.DTO.Request.LoginRequest;
 import com.example.QuanLiPT1.DTO.Request.RegisterRequest;
-import com.example.QuanLiPT1.DTO.Request.UserDTO;
 import com.example.QuanLiPT1.DTO.Response.MessageResponse;
-import com.example.QuanLiPT1.Entity.Products;
+import com.example.QuanLiPT1.Entity.Product.Products;
 import com.example.QuanLiPT1.Service.ProductService;
 import com.example.QuanLiPT1.Service.emailService;
 import com.example.QuanLiPT1.Service.jwtService;

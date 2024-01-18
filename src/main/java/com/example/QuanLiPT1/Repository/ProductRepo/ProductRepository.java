@@ -1,11 +1,8 @@
-package com.example.QuanLiPT1.Repository;
+package com.example.QuanLiPT1.Repository.ProductRepo;
 
-import com.example.QuanLiPT1.Entity.Product_Category;
-import com.example.QuanLiPT1.Entity.Products;
-import com.example.QuanLiPT1.Entity.User;
+import com.example.QuanLiPT1.Entity.Product.Products;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package com.example.QuanLiPT1.Service;
 
-import com.example.QuanLiPT1.Entity.Products;
-import com.example.QuanLiPT1.Repository.ProductRepository;
+import com.example.QuanLiPT1.Entity.Product.Products;
+import com.example.QuanLiPT1.Repository.ProductRepo.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

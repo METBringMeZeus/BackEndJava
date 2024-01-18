@@ -1,7 +1,6 @@
 package com.example.QuanLiPT1.Service;
-import com.example.QuanLiPT1.Repository.UserRepository;
+import com.example.QuanLiPT1.Repository.UserRepo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 public class PageableService {

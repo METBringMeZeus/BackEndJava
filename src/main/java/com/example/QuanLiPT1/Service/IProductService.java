@@ -1,8 +1,7 @@
 package com.example.QuanLiPT1.Service;
 
-import com.example.QuanLiPT1.Entity.Products;
+import com.example.QuanLiPT1.Entity.Product.Products;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
