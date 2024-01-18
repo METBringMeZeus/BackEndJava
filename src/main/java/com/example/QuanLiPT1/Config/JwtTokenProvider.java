@@ -1,14 +1,9 @@
 package com.example.QuanLiPT1.Config;
 
-import com.example.QuanLiPT1.Entity.CustomUserDetails;
+import com.example.QuanLiPT1.Entity.User.CustomUserDetails;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 

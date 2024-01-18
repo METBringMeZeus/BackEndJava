@@ -1,11 +1,13 @@
-package com.example.QuanLiPT1.Entity;
+package com.example.QuanLiPT1.Entity.Product;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Table(name = "product")
+import java.util.List;
 @Entity
+@Table(name = "product")
 @Getter
 @Setter
 @Builder
@@ -13,7 +15,7 @@ import lombok.*;
 @AllArgsConstructor
 public class Products {
     @Id
-    @Column(name = "productID")
+    @Column(name = "productid")
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     private int ProductID;
     @Column(name = "productname")
@@ -38,4 +40,12 @@ public class Products {
     @JoinColumn(name = "product_category_id")
     @JsonBackReference
     Product_Category productCategory;
+
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "products")
+    @JsonManagedReference
+    List<Properties> properties;
+
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "products")
+    @JsonManagedReference
+    List<ProductDetailPropertyDetails> productDetailPropertyDetails;
 }

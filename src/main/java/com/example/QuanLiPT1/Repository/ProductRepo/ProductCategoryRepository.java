@@ -1,6 +1,6 @@
-package com.example.QuanLiPT1.Repository;
+package com.example.QuanLiPT1.Repository.ProductRepo;
 
-import com.example.QuanLiPT1.Entity.Product_Category;
+import com.example.QuanLiPT1.Entity.Product.Product_Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

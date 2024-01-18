@@ -2,13 +2,14 @@ package com.example.QuanLiPT1.Service;
 
 import com.example.QuanLiPT1.Config.JwtTokenProvider;
 import com.example.QuanLiPT1.DTO.Request.LoginRequest;
-import com.example.QuanLiPT1.DTO.Response.TokenResponse;
-import com.example.QuanLiPT1.DTO.Response.jwtAuthenticationResponse;
-import com.example.QuanLiPT1.Entity.*;
-import com.example.QuanLiPT1.Repository.RegistrationFormRepository;
-import com.example.QuanLiPT1.Repository.UserRepository;
-import com.example.QuanLiPT1.Repository.XacNhanEmailRepository;
-import com.example.QuanLiPT1.Repository.refreshTokenRepository;
+import com.example.QuanLiPT1.Entity.User.CustomUserDetails;
+import com.example.QuanLiPT1.Entity.User.RefreshToken;
+import com.example.QuanLiPT1.Entity.User.RegistrationForm;
+import com.example.QuanLiPT1.Entity.User.User;
+import com.example.QuanLiPT1.Repository.UserRepo.RegistrationFormRepository;
+import com.example.QuanLiPT1.Repository.UserRepo.UserRepository;
+import com.example.QuanLiPT1.Repository.UserRepo.XacNhanEmailRepository;
+import com.example.QuanLiPT1.Repository.UserRepo.refreshTokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,9 +22,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
-import java.util.HashMap;
 import java.util.Optional;
-import java.util.UUID;
 
 @Service
 public class jwtService implements IjwtService {

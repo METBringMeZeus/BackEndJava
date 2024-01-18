@@ -1,4 +1,4 @@
-package com.example.QuanLiPT1.Entity;
+package com.example.QuanLiPT1.Entity.Product;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
@@ -20,7 +20,6 @@ public class Product_Category {
     private int ProductCategoryID;
     @Column(name = "category_name")
     private String CategoryName;
-
     @OneToMany(fetch = FetchType.LAZY,mappedBy = "productCategory")
     @JsonManagedReference
     List<Products> products;

@@ -1,13 +1,9 @@
-package com.example.QuanLiPT1.Entity;
+package com.example.QuanLiPT1.Entity.User;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.context.annotation.Configuration;
 
-import javax.xml.crypto.Data;
-import java.time.LocalDate;
 @Getter
 @Setter
 @AllArgsConstructor

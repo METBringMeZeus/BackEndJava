@@ -1,4 +1,4 @@
-package com.example.QuanLiPT1.Entity;
+package com.example.QuanLiPT1.Entity.User;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
